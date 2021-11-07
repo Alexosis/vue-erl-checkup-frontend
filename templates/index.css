@@ -8,9 +8,8 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 5rem;
     height: 100vh;
-    background-image: url("../../erl-checkup-frontend/asesst/380173-blue-desktop-backgrounds-wallpaper.jpg");
+    background-image: url("./380173-blue-desktop-backgrounds-wallpaper.jpg");
 }
 
 .auth-card {
@@ -30,4 +29,75 @@
 
 .button_size_register {
     width: 55%;
+}
+
+.section-content {
+    height: 100%;
+}
+
+.row_section{
+    height: 100%;
+    width: 100%;
+}
+
+.section-content_right{
+    right: 0;
+}
+.section-content_left{
+    left: 0;
+}
+
+.section_card-content_height{
+    height: 95%;
+}
+
+.section_card-content_color{
+    background-color: rgb(255, 255, 255, 1);
+    border: none;
+}
+
+.section-content h1{
+    font-family: Roboto, bold, serif;
+    font-max-size: 0.2rem;
+}
+
+.section-content_card-content-padding{
+    padding: 0 !important;
+}
+
+.input-field {
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: white;
+}
+
+.card-action{
+    padding: 16px 10px !important;
+}
+
+h4{
+    background-color: white;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.form_input_size{
+    height: 30px !important;
+}
+
+.form_row_size{
+    margin: 0;
+}
+
+.form_row_size h5{
+    font-size: 18px;
+}
+
+.form_input-size_margin{
+    margin: 0 !important;
+}
+
+.card-action_button_size{
+    width: 32%;
+    height: 30px;
 }

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<!--TODO: realise left part as nav-->
+
+<div class="main-layout">
+  <div class="row row_section">
+    <section class="col s3 section-content">
+      <div class="card section_card-content_height section_card-content_color">
+        <h4>Список пациентов</h4>
+        <div class="card-content section-content_card-content-padding">
+          <div class="card-action">
+            <div>
+              <button class="waves-effect btn white black-text">
+                <i class="material-icons left">add</i> Добавить
+              </button>
+              <button class="waves-effect btn white black-text">
+                <i class="material-icons left">delete</i> Удалить
+              </button>
+              <div class="input-field">
+                <i class="material-icons prefix">search</i>
+                <input
+                  id="search"
+                  type="text"
+                >
+                <label for="search">Поиск</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <table class="centered white striped">
+          <tr>
+            <td>Alvin</td>
+          </tr>
+          <tr>
+            <td>Alan</td>
+          </tr>
+          <tr>
+            <td>Jonathan</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="col s5 section-content">
+      <div class="card section_card-content_height section_card-content_color">
+        <h4>Карточка пациента</h4>
+        <div class="card-content">
+          <form class="col s12">
+            <div class="row form_row_size">
+              <h5 class="col s3">
+                ФИО:
+              </h5>
+              <div class="input-field col s9 form_input-size_margin">
+                <input placeholder="Имя" id="FIO" type="text" class="validate form_input_size">
+                <!--                <label for="first_name">Имя</label>-->
+              </div>
+            </div>
+            <div class="row form_row_size">
+              <h5 class="col s3">
+                Дата рождения:
+              </h5>
+              <div class="input-field col s9">
+                <input placeholder="Дата рождения" id="birthDate" type="text" class="validate form_input_size">
+                <!--                <label for="first_name">Имя</label>-->
+              </div>
+            </div>
+            <div class="row form_row_size">
+              <h5 class="col s3">
+                Или возраст:
+              </h5>
+              <div class="input-field col s9">
+                <input placeholder="Возраст" id="age" type="text" class="validate form_input_size">
+                <!--                <label for="first_name">Имя</label>-->
+              </div>
+            </div>
+            <div class="row form_row_size">
+              <h5 class="col s3">
+                Пол:
+              </h5>
+              <div class="input-field col s12">
+                <select>
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="1">Мужской</option>
+                  <option value="2">Женский</option>
+                </select>
+              </div>
+            </div>
+            <h5>Результаты прошу сообщить мне по:</h5>
+            <div class="row form_row_size">
+              <h5 class="col s3">
+                E-mail
+              </h5>
+              <div class="input-field col s9">
+                <input placeholder="E-mail" id="email" type="text" class="validate form_input_size">
+                <!--                <label for="first_name">Имя</label>-->
+              </div>
+            </div>
+            <div class="row form_row_size">
+              <h5 class="col s3">
+                Телефон
+              </h5>
+              <div class="input-field col s9">
+                <input placeholder="Номер телефона" id="phone" type="text" class="validate form_input_size">
+                <!--                <label for="first_name">Имя</label>-->
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea disabled id="textarea" class="materialize-textarea"> Я, {{FIO}}, дата рождения {{birthDate}} (возраст {{age}}), пол {{sex}}, в соответствии с п.4. ст.9 Феделерального закона от 27.07.2006 № 152-ФЗ "О персональных данных", даю согласие, на обработку моих персональных данных предоставляемых мною вместе с общим анализом крови для определения типа адаптационной реакции, уровня реактивности и баллов здоровья и извещения меня о результатах. Настоящее согласие действует со сдня его подписания в течении времени действия договора по оказанию медицинских услуг, либо до дня отзыва в письменной форме.
+                </textarea>
+                <p class="right">
+                  <label>
+                    <input type="checkbox" />
+                    <span>Согласен</span>
+                  </label>
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="col s4 section-content">
+      <div class="card section_card-content_height section_card-content_color">
+        <h4>Анализы пациента</h4>
+        <div class="card-content .section-content_card-content-padding">
+          <div class="card-action">
+            <button class="waves-effect btn white black-text card-action_button_size">
+              Добавить
+            </button>
+            <button class="waves-effect btn white black-text card-action_button_size">
+              Изменить
+            </button>
+            <button class="waves-effect btn white black-text card-action_button_size">
+              Удалить
+            </button>
+          </div>
+        </div>
+<!--TODO: make a table till the end of the page-->
+        <table class="centered white striped">
+          <tr>
+            <td>01.01.2000</td>
+          </tr>
+          <tr>
+            <td>01.01.2000</td>
+          </tr>
+          <tr>
+            <td>01.01.2000</td>
+          </tr>
+          <tr>
+            <td>01.01.2000</td>
+          </tr>
+          <tr>
+            <td>01.01.2000</td>
+          </tr>
+          <tr>
+            <td>01.01.2000</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </div>
+</div>
+
+</body>
+</html>
