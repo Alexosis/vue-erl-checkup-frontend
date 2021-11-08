@@ -101,3 +101,13 @@ h4{
     width: 32%;
     height: 30px;
 }
+
+.section_card-content_width{
+    width: 90vw;
+}
+
+.card-action_bottom_margin{
+    position: absolute !important;
+    bottom: 0;
+    width: 100%;
+}
