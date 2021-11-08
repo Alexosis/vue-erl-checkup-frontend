@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Результаты анализов</title>
+</head>
+<body>
+<div class="medical_tests">
+    <div class="form_medical">
+        <div class="form-group row">
+            <label for="test_date" class="col-sm-2 col-form-label">Дата исследования</label>
+            <div class="col-sm-3">
+                <input type="date" class="form-control" id="test_date">
+            </div>
+        </div>
+        <h5 class="pb-2">
+            Результаты анализов
+        </h5>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <div class="form-group row">
+                    <label for="leukocyte" class="col-sm-4 col-form-label">Лейкоциты - WBS</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="leukocyte">
+                    </div>
+                    <p class="col-form-label">x10<sup>9</sup>/л</p>
+                </div>
+                <div class="form-group row">
+                    <label for="lymphocytes" class="col-sm-4 col-form-label">Лимфоциты - LYM%</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="lymphocytes">
+                    </div>
+                    <p class="col-form-label">%</p>
+                </div>
+                <div class="form-group row">
+                    <label for="monocytes" class="col-sm-4 col-form-label">Моноциты - MON%</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="monocytes">
+                    </div>
+                    <p class="col-form-label">%</p>
+                </div>
+                <div class="form-group row">
+                    <label for="basophils" class="col-sm-4 col-form-label">Базофилы - BAS%</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="basophils">
+                    </div>
+                    <p class="col-form-label">%</p>
+                </div>
+                <div class="form-group row">
+                    <label for="eosinophils" class="col-sm-4 col-form-label">Эозофилы - EOS%</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="eosinophils">
+                    </div>
+                    <p class="col-form-label">%</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="form-group row">
+                    <label for="neutrophils" class="col-sm-5 col-form-label">Нейтрофилы - NEUT%</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="neutrophils">
+                    </div>
+                    <p class="col-form-label">%</p>
+                </div>
+                <div class="form-group row">
+                    <label for="young" class="col-sm-5 col-form-label">Юные - IMM%</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="young">
+                    </div>
+                    <p class="col-form-label">%</p>
+                </div>
+                <div class="form-group row">
+                    <label for="myelocytes" class="col-sm-5 col-form-label">Миелоциты - </label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="myelocytes">
+                    </div>
+                    <p class="col-form-label">%</p>
+                </div>
+                <div class="form-group row">
+                    <label for="toxic_grit" class="col-sm-5 col-form-label">Токсическая зернистость</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="toxic_grit">
+                    </div>
+                    <p class="col-form-label">%</p>
+                </div>
+                <div class="form-group row">
+                    <p for="plasma" class="col-sm-5 col-form-label">Плазматические клетки</p>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="plasma">
+                    </div>
+                    <p class="col-form-label">%</p>
+                </div>
+            </div>
+        </div>
+        <div class="report">
+            <h5 class="pb-2">
+                Краткое заключение
+            </h5>
+            <div class="col-md-6">
+                <div class="row">
+                    <p class="col-sm-4">Тип реакции:</p>
+                    <p class="col-sm-4 reaction_type">Что-то выводится 1</p>
+                </div>
+                <div class="row">
+                    <p class="col-sm-4">Уровень реактивности:</p>
+                    <p class="col-sm-4 reactivity_level">Что-то выводится 2</p>
+                </div>
+                <div class="row">
+                    <p class="col-sm-4">Уровень здоровья:</p>
+                    <p class="col-sm-4 health_level">Что-то выводится 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row form_medical_buttons d-flex justify-content-between">
+        <div class="">
+            <button type="button" class="btn btn-light form_medical_buttons_report">Заключение</button>
+            <button type="button" class="btn btn-light form_medical_buttons_therapy">Активационная терапия</button>
+        </div>
+        <div class="">
+            <button type="button" class="btn btn-light form_medical_buttons_ok">ОК</button>
+            <button type="button" class="btn btn-light form_medical_buttons_back">Назад</button>
+            <button type="button" class="btn btn-light form_medical_buttons_save">Сохранить</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
