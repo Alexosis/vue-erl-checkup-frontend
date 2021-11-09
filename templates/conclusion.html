@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="main-layout">
+  <section class="section-content">
+    <div class="card section_card-content_height section_card-content_width">
+      <img src="img.png" alt="header" class="section_img_width">
+
+      <div class="row">
+        <div class="col s5">
+          <h4 class="left-align">{{ userName, age, sex }}</h4>
+          <hr>
+
+          <div class="row">
+            <div class="col s6">
+              <div class="card">
+                <div class="row">
+                  <div class="col s2">
+                    <a class="black-text right">
+                      1
+                    </a>
+                  </div>
+                  <div class="col s10">
+                    <a class="row_a_font-size black-text">
+                      Дата анализа: {{ analysisDate }} <br>
+                      Лейкоцитная формула
+                    </a></div>
+
+                  <div class="col s12">
+                    <table class="table-padding">
+                      <tr>
+                        <td>Лейкоциты - WBC</td>
+                        <td>0,0</td>
+                        <td>x10^9/л</td>
+                      </tr>
+                      <tr>
+                        <td>Лимфоциты - LYM%</td>
+                        <td>0,0</td>
+                        <td>%</td>
+                      </tr>
+                      <tr>
+                        <td>Моноциты - MON%</td>
+                        <td>0,0</td>
+                        <td>%</td>
+                      </tr>
+                      <tr>
+                        <td>Базофилы - BAS%</td>
+                        <td>0,0</td>
+                        <td>%</td>
+                      </tr>
+                      <tr>
+                        <td>Эозинофилы - EOS%</td>
+                        <td>0,0</td>
+                        <td>%</td>
+                      </tr>
+                      <tr>
+                        <td>Нейтрофилы - NEUT%</td>
+                        <td>0,0</td>
+                        <td>%</td>
+                      </tr>
+                      <tr>
+                        <td>Юные - IMM%</td>
+                        <td>0,0</td>
+                        <td>%</td>
+                      </tr>
+                      <tr>
+                        <td>Миелоциты -</td>
+                        <td>0,0</td>
+                        <td>%</td>
+                      </tr>
+                      <tr>
+                        <td>Токсическая зернистость</td>
+                        <td>0,0</td>
+                        <td>%</td>
+                      </tr>
+                      <tr>
+                        <td>Плазматические клетки</td>
+                        <td>0,0</td>
+                        <td>%</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s6">
+              <div class="card">
+                <div class="row">
+                  <div class="col s2">
+                    <a class="black-text right">
+                      2
+                    </a>
+                  </div>
+                  <div class="col s10">
+                    <a class="row_a_font-size black-text">
+                      Дата анализа: {{ analysisDate }} <br>
+                      Лейкоцитная формула
+                    </a></div>
+
+                  <div class="col s12">
+                    <table class="table-padding">
+                      <tr>
+                        <td>Лейкоциты - WBC</td>
+                        <td>0,0</td>
+                        <td>x10^9/л</td>
+                      </tr>
+                      <tr>
+                        <td>Лимфоциты - LYM%</td>
+                        <td>0,0</td>
+                        <td>%</td>
+                      </tr>
+                      <tr>
+                        <td>Моноциты - MON%</td>
+                        <td>0,0</td>
+                        <td>%</td>
+                      </tr>
+                      <tr>
+                        <td>Базофилы - BAS%</td>
+                        <td>0,0</td>
+                        <td>%</td>
+                      </tr>
+                      <tr>
+                        <td>Эозинофилы - EOS%</td>
+                        <td>0,0</td>
+                        <td>%</td>
+                      </tr>
+                      <tr>
+                        <td>Нейтрофилы - NEUT%</td>
+                        <td>0,0</td>
+                        <td>%</td>
+                      </tr>
+                      <tr>
+                        <td>Юные - IMM%</td>
+                        <td>0,0</td>
+                        <td>%</td>
+                      </tr>
+                      <tr>
+                        <td>Миелоциты -</td>
+                        <td>0,0</td>
+                        <td>%</td>
+                      </tr>
+                      <tr>
+                        <td>Токсическая зернистость</td>
+                        <td>0,0</td>
+                        <td>%</td>
+                      </tr>
+                      <tr>
+                        <td>Плазматические клетки</td>
+                        <td>0,0</td>
+                        <td>%</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h4>Комментарии</h4>
+          <a href="#" class="waves-effect btn white black-text">Сгенерировать</a>
+          <a href="#" class="waves-effect btn white black-text">Очистить</a>
+          <div class="row">
+            <form class="col s12">
+              <div class="input-field col s12">
+                  <textarea id="textarea" disabled class="row_textarea_size">Данные результаты исследований должны быть интерпретированы в соответствии с клинической картиной лечащим врачом.
+Свертываемость крови: Чаще всего высока. В тяжелых случаях отмечается синдров ДВС (дисрегуляция внутрисосудистого свертывания).
+ЦНС: Значительно выражено торможение, сменяющееся значительным возбуждением. Реактивность нарушена.
+Психоэмоциональное состояние: Настроение плохое, значительно преобладает пессимизм, активность низкая. Работоспособность значительно снижена и по скорости, и по длительности. Значительно выражена тревожность и угнетенность. Бывает раздражительность. Аппетит и сон нарушены.
+Железы внутренней секреции: Активность значительно снижена. Но секреция глюкокортикоидов (противовоспалительных гормонов) может быть в пределах нормы.
+Состояние иммунитета: Активность клеточного иммунитета резко снижена, гуморального - существенно снижена.
+Резистентность организма: Значительно сниженаю
+Метаболизм: Пластический и энергетический нарушены. Преобладает катаболизм (распад), выражен невыгодный гликолиз.
+Заключение: Реакция стресса низкого уровня реактивности отмечается у тяжелых больных. Выраженный интоксикоз борьба с которым в некоторых случаях может быть первоочередной по важности задачей. Необходимо сочетание специальной, патогенетической терапии и интенсивоной детоксикационной программы.</textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

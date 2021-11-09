@@ -8,7 +8,7 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 5rem;
+    padding-top: 2rem;
     height: 100vh;
     background-image: url("./380173-blue-desktop-backgrounds-wallpaper.jpg");
 }
@@ -49,7 +49,7 @@
 }
 
 .section_card-content_height{
-    height: 95%;
+    height: 98%;
 }
 
 .section_card-content_color{
@@ -104,13 +104,28 @@ h4{
 }
 
 .section_card-content_width{
-    width: 90vw;
+    width: 95vw;
 }
 
 .card-action_bottom_margin{
     position: absolute !important;
     bottom: 0;
     width: 100%;
+}
+
+.section_img_width{
+    width: 100%;
+}
+
+.row_a_font-size{
+    font-size: 0.85em;
+}
+
+.table-padding td{
+    padding: 0;
+}
+.table-padding{
+    margin-top: 15px;
 }
 
 .form_medical {
@@ -122,3 +137,11 @@ h4{
 .form_medical_buttons {
     margin: 40px;
 }
+
+.row_textarea_size{
+    resize: none;
+    height: 200px;
+    overflow-y: auto;
+}
+
+
